@@ -37,6 +37,7 @@
                     <?php  $wrapOptions = true; endif; ?>
                     <div data-role="collapsible" class="filter-options-item">
                         <div data-role="title" class="filter-options-title"><?= /* @escapeNotVerified */ __($filter->getName()) ?></div>
+						<div><span>123</span></div>
                         <div data-role="content" class="filter-options-content"><?= /* @escapeNotVerified */ $block->getChildBlock('renderer')->render($filter) ?></div>
                     </div>
                 <?php endif; ?>

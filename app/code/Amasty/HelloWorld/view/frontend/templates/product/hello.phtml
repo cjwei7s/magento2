@@ -1,0 +1,12 @@
+<?php
+
+?>
+<div class="amasty-helloworld-block" style="text-align: <?= $this->getTextAlign()?>">
+    <h3 class="label"><?= $this->getBlockLabel()?></h3>
+
+  <img src="<?php echo $block->getUrl('pub/media/sales/store/logo/').'default/flat_800x800_075_f.u1.jpg'; ?>" />
+
+    <?php foreach($this->getCollection() as $item):?>
+        <p><label><?= __("Title: ") . $item->getLabel()?></label> -- <label><?=  __("Value: ") . $item->getValue();?></label></p>
+    <?php endforeach;?>
+</div>
